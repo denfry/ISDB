@@ -1,0 +1,14 @@
+D:\__VisualStudio\ISDBlab1\ISDBlab1\bin\Debug\net9.0\ISDBlab1.exe
+D:\__VisualStudio\ISDBlab1\ISDBlab1\bin\Debug\net9.0\ISDBlab1.deps.json
+D:\__VisualStudio\ISDBlab1\ISDBlab1\bin\Debug\net9.0\ISDBlab1.runtimeconfig.json
+D:\__VisualStudio\ISDBlab1\ISDBlab1\bin\Debug\net9.0\ISDBlab1.dll
+D:\__VisualStudio\ISDBlab1\ISDBlab1\bin\Debug\net9.0\ISDBlab1.pdb
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.AssemblyInfoInputs.cache
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.AssemblyInfo.cs
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.csproj.CoreCompileInputs.cache
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.dll
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\refint\ISDBlab1.dll
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.pdb
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ISDBlab1.genruntimeconfig.cache
+D:\__VisualStudio\ISDBlab1\ISDBlab1\obj\Debug\net9.0\ref\ISDBlab1.dll
