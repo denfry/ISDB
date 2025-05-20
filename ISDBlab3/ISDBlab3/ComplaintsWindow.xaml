@@ -1,0 +1,60 @@
+﻿<Window x:Class="ISDBlab3.ComplaintsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Жалобы" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="AddButton" Content="Добавить" Width="100" Margin="5" Click="AddButton_Click"/>
+            <Button x:Name="EditButton" Content="Редактировать" Width="100" Margin="5" Click="EditButton_Click"/>
+            <Button x:Name="DeleteButton" Content="Удалить" Width="100" Margin="5" Click="DeleteButton_Click"/>
+        </StackPanel>
+        <!-- Панель фильтрации -->
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <Label Content="Год с:"/>
+            <TextBox x:Name="YearFilter1" Width="50" Margin="5"/>
+            <Label Content="по:"/>
+            <TextBox x:Name="YearFilter2" Width="50" Margin="5"/>
+            <Label Content="Месяц с:" Margin="10,0,0,0"/>
+            <TextBox x:Name="MonthFilter1" Width="50" Margin="5"/>
+            <Label Content="по:"/>
+            <TextBox x:Name="MonthFilter2" Width="50" Margin="5"/>
+            <Label Content="Код модели:" Margin="10,0,0,0"/>
+            <TextBox x:Name="ModelCodeFilter" Width="50" Margin="5"/>
+            <Label Content="Цена от:" Margin="10,0,0,0"/>
+            <TextBox x:Name="PriceFilter1" Width="50" Margin="5"/>
+            <Label Content="до:"/>
+            <TextBox x:Name="PriceFilter2" Width="50" Margin="5"/>
+            <Label Content="Жалобы от:" Margin="10,0,0,0"/>
+            <TextBox x:Name="ComplaintCountFilter1" Width="50" Margin="5"/>
+            <Label Content="до:"/>
+            <TextBox x:Name="ComplaintCountFilter2" Width="50" Margin="5"/>
+            <Label Content="Продано от:" Margin="10,0,0,0"/>
+            <TextBox x:Name="UnitsSoldFilter1" Width="50" Margin="5"/>
+            <Label Content="до:"/>
+            <TextBox x:Name="UnitsSoldFilter2" Width="50" Margin="5"/>
+            <Button x:Name="FilterButton" Content="Фильтровать" Margin="10,0,0,0" Click="FilterButton_Click" Width="80"/>
+            <Button x:Name="ClearButton" Content="Очистить" Margin="5,0,0,0" Click="ClearButton_Click" Width="80"/>
+        </WrapPanel>
+        <DataGrid x:Name="ComplaintsDataGrid" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,0,0,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding complaint_id}" Width="50"/>
+                <DataGridTextColumn Header="Год" Binding="{Binding complaint_year}" Width="50"/>
+                <DataGridTextColumn Header="Месяц" Binding="{Binding complaint_month}" Width="50"/>
+                <DataGridTextColumn Header="Код модели" Binding="{Binding model_code}" Width="80"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding price, StringFormat=N2}" Width="*"/>
+                <DataGridTextColumn Header="Жалобы" Binding="{Binding complaint_count}" Width="80"/>
+                <DataGridTextColumn Header="Продано" Binding="{Binding units_sold}" Width="80"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Закрыть" Width="100" Margin="5" Click="CloseButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LFD9Gl9igm4=",
+  "success": true,
+  "projectFilePath": "D:\\__VisualStudio\\ISDBlab3\\ISDBlab3\\ISDBlab3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danii\\.nuget\\packages\\system.data.odbc\\9.0.5\\system.data.odbc.9.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

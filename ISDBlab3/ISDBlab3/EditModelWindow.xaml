@@ -1,0 +1,28 @@
+﻿<Window x:Class="ISDBlab3.EditModelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактирование модели" Height="250" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Код модели:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="edCode" Grid.Row="0" Grid.Column="1" Margin="5" IsReadOnly="True"/>
+        <Label Content="Название модели:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="edName" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <Label Content="Тип модели:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="edType" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <Button x:Name="bOk" Content="Сохранить" Width="75" Margin="5" Click="bOk_Click" IsDefault="True"/>
+            <Button x:Name="bCancel" Content="Отмена" Width="75" Margin="5" Click="bCancel_Click" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

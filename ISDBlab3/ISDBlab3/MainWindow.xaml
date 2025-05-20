@@ -1,0 +1,27 @@
+﻿<Window x:Class="ISDBlab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главное окно" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded"
+        Icon="/resources/pc.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Справочник">
+                <MenuItem Header="Модели" Click="ModelsMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Жалобы">
+                <MenuItem Header="Просмотр и редактирование" Click="ComplaintsMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Файл">
+                <MenuItem x:Name="miExit" Header="Выход" Click="miExit_Click"/>
+            </MenuItem>
+            
+        </Menu>
+        <Image Grid.Row="1" Source="pack://application:,,,/resources/image.png" Stretch="Fill" Margin="10"/>
+    </Grid>
+</Window>
